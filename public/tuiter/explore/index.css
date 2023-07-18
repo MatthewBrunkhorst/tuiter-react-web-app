@@ -1,0 +1,119 @@
+.wd-searchbar-input {
+  border-radius:50px;
+  background-color: lightgray;
+  border-width:0px;
+  width: 80%;
+  height: 40px;
+  padding-left:40px;
+}
+
+.wd-searchbar {
+  padding:10px;
+  width:100%
+            
+}
+
+.fa-magnifying-glass {
+  padding: 13px;
+            min-width: 40px;
+            position:absolute;
+}
+
+.fa-gear {
+  margin-right:40px;
+  padding:13px;
+  float:right;
+}
+
+ul {
+  list-style:none;
+}
+
+.wd-inactive-tab {
+  padding:10px;
+  float:left;
+  color:grey;
+}
+
+.wd-active-tab {
+  padding:10px;
+  float:left;
+  border-bottom:5px solid blue;
+}
+
+.wd-tabs-list {
+  display: flex;
+    justify-content: space-between;
+}
+
+.wd-tabs {
+  padding:10px;
+}
+
+.wd-image {
+  padding:10px;
+  position: relative;
+}
+
+.wd-image-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color:white;
+}
+
+.fa-ellipsis {
+  float:right;
+  margin-right:100px;
+}
+
+.wd-tuits {
+  border: 1px solid lightgrey;
+  width:100%;
+  padding:10px;
+}
+
+.wd-tuits-list {
+  width:100%;
+}
+
+.wd-tuit {
+  padding:10px;
+  width:100%;
+}
+
+.wd-grey {
+  color:grey;
+  font-size:smaller;
+}
+
+
+.wd-small-text {
+  font-size:12px;
+}
+
+.wd-column {
+  padding:10px;
+}
+
+.list-group-item i {
+  margin-right:8px;
+  float:none;
+}
+
+.wd-main-searchbar {
+  width:80%;
+  float:left;
+}
+
+.wd-searchbar-text {
+  padding-left:40px;
+}
+
+.wd-gear2 {
+  color:blue;
+}
+
+.wd-grey-text {
+  color:grey;
+}

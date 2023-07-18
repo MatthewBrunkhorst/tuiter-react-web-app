@@ -1,0 +1,92 @@
+.fa-ellipsis {
+  float:right;
+  margin-right:100px;
+  padding:3px;
+}
+
+.fa-arrow-left {
+  margin-left:10px;
+  margin-right:20px;
+}
+
+.wd-top-bar {
+  padding:10px;
+  width:80%;
+}
+
+.wd-tuits {
+  
+  width:80%;
+  padding:10px;
+
+  
+}
+
+.wd-tuits-list {
+  width:100%;
+  list-style:none;
+}
+
+.wd-tuit {
+  border: 2px solid lightgrey;
+  padding:10px;
+  width:100%;
+}
+
+.wd-grey {
+  color:grey;
+}
+
+.wd-profile-image {
+  padding:10px;
+  float:left;
+  border-radius:50%;
+}
+
+.wd-link a {
+  text-decoration: none;
+  color:black;
+}
+
+.wd-link {
+  margin-left:65px;
+  margin-top:20px;
+  border:2px solid lightgrey;
+  border-radius:30px;
+}
+
+.wd-link-image {
+  border-top-left-radius:28px;
+  border-top-right-radius:28px;
+}
+
+.wd-link-text {
+  padding:20px;
+  border:none;
+}
+
+.wd-bottom-row {
+  margin-left:35px;
+  padding:10px;
+}
+
+.wd-bottom-row i {
+  margin-left:35px;
+  margin-right:8px;
+}
+
+.fa-arrow-up-from-bracket {
+  float:right;
+  margin-right:100px;
+  padding:3px;
+}
+
+.fa-circle-check {
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.fa-flag {
+  margin-left:5px;
+  margin-right:5px;
+}
