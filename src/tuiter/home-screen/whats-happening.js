@@ -8,15 +8,27 @@ import {HiOutlineLocationMarker} from "react-icons/hi";
 import {BiBold, BiItalic} from "react-icons/bi";
 import {createTuit} from "../reducers/tuits-reducer";
 import {useDispatch} from "react-redux";
+import {createTuitThunk} from "../services/tuits-thunks";
 
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');
  const dispatch = useDispatch();
  const tuitClickHandler = () => {
   const newTuit = {
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": `Tesla CyberTruck lands on Mars and
+              picks up the Curiosity rover on its 6' bed`,
+    "image": "tesla.png", "liked": true,
+    "replies": 0,
+    "retuits": 0,
+    "likes": 0,
+    "dislikes":0,
+    "handle": "@spacex",
     tuit: whatsHappening
   }
-  dispatch(createTuit(newTuit));
+  dispatch(createTuitThunk(newTuit));
   setWhatsHappening("");
  }
  return (
