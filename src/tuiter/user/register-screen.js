@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
-import { useDispatch } from "react-redux";
-import { register } from "../services/auth-thunks";
+import { useDispatch, useSelector } from "react-redux";
+import { register, updateUserThunk} from "../services/auth-thunks";
 function RegisterScreen() {
  const [username, setUsername] = useState("");
  const [password, setPassword] = useState("");
@@ -10,14 +10,21 @@ function RegisterScreen() {
  const [_id, set_id] = useState("");
  const navigate = useNavigate();
  const dispatch = useDispatch();
+ const { currentUser } = useSelector((state) => state.user); //
+ const [ profile, setProfile ] = useState(currentUser); //
  const handleRegister = async () => {
+  
   try {
     await dispatch(register({ username, password, firstName, lastName, _id }));
+    
     navigate("/tuiter/profile");
   } catch (e) {
     alert(e);
   }
+  setProfile(currentUser);
+  await dispatch(updateUserThunk(profile)); 
  };
+
  return (
   <div>
    <h1>Register Screen</h1>
