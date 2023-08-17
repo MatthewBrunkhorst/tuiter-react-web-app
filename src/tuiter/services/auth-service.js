@@ -1,5 +1,6 @@
 import axios from "axios";
-const SERVER_API_URL = `http://localhost:4000/api`;
+//const SERVER_API_URL = `http://localhost:4000/api`;
+const SERVER_API_URL = 'https://tuiter-node-web-app-svj8.onrender.com/api';
 const USERS_URL = `${SERVER_API_URL}/users`;
 
 
@@ -23,14 +24,21 @@ export const logout = async () => {
  };
  export const updateUser = async (user) => {
   const response = await api.put(`${USERS_URL}/${user._id}`, user);
+  console.log(user._id);
+  console.log(user);
+  console.log(response);
   return response.data;
  };
- export const register = async ({ username, password , firstName, lastName, _id}) => { 
-  const response = await api.post(`${USERS_URL}/register`, { username, password, firstName, lastName, _id });
+//  export const register = async ({ username, password , firstName, lastName, _id}) => { 
+//   const response = await api.post(`${USERS_URL}/register`, { username, password, firstName, lastName, _id });
+//   const user = response.data;
+//   return user;
+//  }
+ export const register = async ({ username, password , firstName, lastName}) => { 
+  const response = await api.post(`${USERS_URL}/register`, { username, password, firstName, lastName });
   const user = response.data;
   return user;
  }
-
 
 
 

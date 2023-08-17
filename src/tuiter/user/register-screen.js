@@ -7,7 +7,7 @@ function RegisterScreen() {
  const [password, setPassword] = useState("");
  const [firstName, setFirstName] = useState("");
  const [lastName, setLastName] = useState("");
- const [_id, set_id] = useState("");
+//  const [_id, set_id] = useState("");
  const navigate = useNavigate();
  const dispatch = useDispatch();
  const { currentUser } = useSelector((state) => state.user); //
@@ -15,7 +15,7 @@ function RegisterScreen() {
  const handleRegister = async () => {
   
   try {
-    await dispatch(register({ username, password, firstName, lastName, _id }));
+    await dispatch(register({ username, password, firstName, lastName}));
     
     navigate("/tuiter/profile");
   } catch (e) {
@@ -48,11 +48,11 @@ function RegisterScreen() {
      <input className="form-control" type="text" value={lastName}
        onChange={(event) => setLastName(event.target.value)}/>
    </div>
-   <div className="mt-2">
+   {/* <div className="mt-2">
      <label>User ID</label>
      <input className="form-control" type="text" value={_id}
        onChange={(event) => set_id(event.target.value)}/>
-   </div>
+   </div> */}
    <button className="btn btn-primary mt-2"
            onClick={handleRegister}>
      Register
